@@ -1,5 +1,13 @@
-let input1 = document.quarySelector('#input1');
-let input2 = document.quarySelector('#input2');
+let output = document.querySelector('output');
 
-let submit = document.quarySelector('#submitButton');
+function compare() {
+  let input1 = document.querySelector('#input1');
+  let input2 = document.querySelector('#input2');
+  
+  if (input1.value === input2.value) {
+    output.innerHTML = "They're the same input"
+  }
+}
+
+let submit = document.querySelector('#submitButton');
 submit.addEventListener('click', compare);
